@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linkcoason-routing"
+version = "0.1.0"
+description = "按请求复杂度与质量要求打分选模型，并解释选择理由"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "linkcoason" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://linkcoason.github.io"
+Repository = "https://github.com/linkcoason/routing"
+Issues = "https://github.com/linkcoason/routing/issues"
+
+[project.scripts]
+routing = "routing:main"
+
+[tool.setuptools]
+py-modules = ["routing"]
